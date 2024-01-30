@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 const Color = ({color, selectedColor, setSelectedColor}) => {
-  const handleClick = () => {setSelectedColor(color);};
   
   return <div onClick={() => setSelectedColor(color)} className={`${color} ${selectedColor === color ? 'selected' : ''}`}></div>
 }
